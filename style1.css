@@ -1,18 +1,14 @@
-body{
-    min-height: 2500px;
+body {
+  min-height: 2500px;
 }
 .jumbotron {
-    padding-top: 7rem;
-    background-color: #6baee2;
+  padding-top: 7rem;
+  background-color: #6baee2;
 }
-#announcement{
-    background-color: #6baee2;
-    
+#announcement {
+  background-color: #6baee2;
 }
 section {
-    scroll-padding-bottom : 20;
-    padding-top: 2rem;
-}
-#contact {
-    
+  scroll-padding-bottom: 20;
+  padding-top: 2rem;
 }

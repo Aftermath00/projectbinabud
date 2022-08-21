@@ -10,5 +10,9 @@ body{
     
 }
 section {
-    padding-top: 10rem;
+    scroll-padding-bottom : 20;
+    padding-top: 2rem;
+}
+#contact {
+    
 }

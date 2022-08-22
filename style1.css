@@ -12,3 +12,15 @@ section {
   scroll-padding-bottom: 20;
   padding-top: 2rem;
 }
+
+.gallery-img{
+  width: 100%;
+  
+}
+#gallery .row > * {
+  padding: 0;
+}
+
+#contact{
+  background-color:#6baee2;
+}

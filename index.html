@@ -149,7 +149,7 @@
             <div class="col-md-6 mb-3">
               <form name="binabud-contact-form">
                 <div class="mb-3">
-                  <label for="name" class="form-label">Full Name</label>
+                  <label for="name" class="form-label">Name</label>
                   <input type="text" class="form-control" id="name" aria-describedby="name" name="name">
                 </div>
                 <div class="mb-3">
@@ -166,7 +166,7 @@
                   Sending...
                 </button>
                 
-                <div class="alert alert-success alert-dismissible fade show mt-4 d-none" role="alert">
+                <div class="alert alert-success alert-dismissible fade show mt-4 d-none my-alert" role="alert">
                   <strong>Thanks!</strong> Your message has been sent to us !
                   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
@@ -227,16 +227,29 @@
     </footer>
     <!-- end footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbw-r5uXj8k20eEst-P7pTJEYazcS5g69wD5cKoVajZB6X1bBLf8G1fHYMVEHXh4bA8neQ/exec'
-      const form = document.forms['binabud-contact-form']
-      
-      form.addEventListener('submit', e => {
-        e.preventDefault();
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbw-r5uXj8k20eEst-P7pTJEYazcS5g69wD5cKoVajZB6X1bBLf8G1fHYMVEHXh4bA8neQ/exec';
+      const form = document.forms['binabud-contact-form'];
+      const btnSend = document.querySelector('.btn-send');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
 
-        
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();  
+        // submit clicked, button gone
+        btnLoading.classList.toggle('d-none');
+        btnSend.classList.toggle('d-none');
+
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
+          .then((response) => {
+            btnLoading.classList.toggle('d-none');
+            btnSend.classList.toggle('d-none');
+            myAlert.classList.toggle('d-none');
+            //reset
+            form.reset();
+            console.log('Success!', response)
+          })
           .catch(error => console.error('Error!', error.message));
       });
     </script>

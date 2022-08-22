@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel = "icon" href ="img/binaantarbudaya.png" type = "image/x-icon">
     <title>Bina Antar Budaya | Chapter Medan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -17,7 +18,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top"
     style="background-color : #007AC2">
       <div class="container">
-        <a class="navbar-brand" href="#">Bina Antar Budaya Medan</a>
+        <a class="navbar-brand" href="#home">
+          <img src="img/binaantarbudaya.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+          Bina Antar Budaya Medan</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -304,7 +307,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/TextPlugin.min.js"></script>
     <script>
       gsap.registerPlugin(TextPlugin);
-      gsap.to('.lead',{duration:3, delay: 2, text:'The Indonesian Foundation for Intercultural Learning'})
+      gsap.to('.lead',{duration:2, delay: 1.5, text:'The Indonesian Foundation for Intercultural Learning'})
       gsap.from('.jumbotron img', {
         duration:1, rotateY: 360, opacity :0,
       });

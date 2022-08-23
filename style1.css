@@ -25,28 +25,24 @@ section {
 }
 
 .row-gallery {
-  display: flex;
-  flex-direction: row;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
 }
-.picture-box::before {
-  top: 52%;
-  opacity: 0;
-  transform: translate(0, 0);
-  transform-style: preserve-3d;
+
+.picture-box{
+  
+  transition: 1s;
 }
+
 .gallery-picture {
   position: relative;
   transition: 0.5s;
   transform: translate3d(0, 0, 150px);
-  display: block;
 }
 
-.picture-box {
-  position: relative;
-  display: block;
-}
 .picture-box:hover .gallery-picture {
   transform: translate3d(0, 0, 100px) scale(1.5);
-  z-index: 1;
-  display: block;
+  z-index: -2;
+	box-shadow: 2px 2px 2px #000000;
 }

@@ -13,14 +13,40 @@ section {
   padding-top: 2rem;
 }
 
-.gallery-img{
+.gallery-img {
   width: 100%;
-  
 }
 #gallery .row > * {
   padding: 0;
 }
 
-#contact{
-  background-color:#6baee2;
+#contact {
+  background-color: #6baee2;
+}
+
+.row-gallery {
+  display: flex;
+  flex-direction: row;
+}
+.picture-box::before {
+  top: 52%;
+  opacity: 0;
+  transform: translate(0, 0);
+  transform-style: preserve-3d;
+}
+.gallery-picture {
+  position: relative;
+  transition: 0.5s;
+  transform: translate3d(0, 0, 150px);
+  display: block;
+}
+
+.picture-box {
+  position: relative;
+  display: block;
+}
+.picture-box:hover .gallery-picture {
+  transform: translate3d(0, 0, 100px) scale(1.5);
+  z-index: 1;
+  display: block;
 }

@@ -135,15 +135,41 @@
     <!-- gallery -->
     <section id="gallery">
       <div class="container">
-          <div class="row text-center mb-1">
-            <div class="col text-info">
+          <div class="row text-center mb-5">
+            <div class="col text-info mb-5">
               <h2>
                 Gallery of Us
               </h2>
             </div>
           </div>
       </div>
-      <div class="slider">
+      <div class="slider gallery-slider mb-5">
+        <span style="--i:1">
+          <img src="img/gallery/1.jpg" alt="Gambar 1"> 
+        </span>
+        <span style="--i:2">
+          <img src="img/gallery/2.jpg" alt="Gambar 2"> 
+        </span>
+        <span style="--i:3">
+          <img src="img/gallery/3.jpg" alt="Gambar 3"> 
+        </span>
+        <span style="--i:4">
+          <img src="img/gallery/4.jpg" alt="Gambar 4"> 
+        </span>
+        <span style="--i:5">
+          <img src="img/gallery/5.jpg" alt="Gambar 5"> 
+        </span>
+        <span style="--i:6">
+          <img src="img/gallery/6.jpg" alt="Gambar 6"> 
+        </span>
+        <span style="--i:7">
+          <img  src="img/gallery/7.jpg" alt="Gambar 7"> 
+        </span>
+        <span style="--i:8">
+          <img src="img/gallery/8.jpg" alt="Gambar 8"> 
+        </span>
+      </div>
+      <div class="slider gallery-slider-2">
         <span style="--i:1">
           <img src="img/gallery/1.jpg" alt="Gambar 1"> 
         </span>
@@ -328,10 +354,11 @@
       });
     </script>
     <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    
     <script type="text/javascript">
-	    VanillaTilt.init(document.querySelectorAll(".picture-box"), {
+	    VanillaTilt.init(document.querySelectorAll(".gallery-slider"), {
 		    max: 25,
-		    speed: 1000
+		    speed: 500
 	    });
     </script>
   </body>

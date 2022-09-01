@@ -1,7 +1,6 @@
 body {
-    min-height: 2500px;
     overflow:visible;
-    background-color: black;
+    background-color: #1D1D1D;
 }
 section {
     scroll-padding-bottom: 20;

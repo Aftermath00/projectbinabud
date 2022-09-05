@@ -1,13 +1,197 @@
-body {
-    overflow:visible;
-    background-color: #1D1D1D;
+/* <i class="fa-sharp fa-solid fa-wand-magic-sparkles fa-3x" aria-hidden="true"></i>
+              <i class="fa-sharp fa-solid fa-wifi fa-3x" aria-hidden="true"></i>
+              <i class="fa-sharp fa-solid fa-city fa-3x" aria-hidden="true"></i>
+              <i class="fa-sharp fa-solid fa-earth-americas fa-3x" aria-hidden="true"></i>
+              <i class="fa-sharp fa-solid fa-landmark fa-3x" aria-hidden="true"></i>
+              <i class="fa-sharp fa-solid fa-school fa-3x" aria-hidden="true"></i>
+              <i class="fa-sharp fa-solid fa-fingerprint fa-3x" aria-hidden="true"></i>
+              <i class="fa-sharp fa-solid fa-football fa-3x" aria-hidden="true"></i>
+              <i class="fa-sharp fa-solid fa-virus-covid fa-3x" aria-hidden="true"></i>
+              <i class="fa-sharp fa-solid fa-star-and-crescent fa-3x" aria-hidden="true"></i>
+              <i class="fa-sharp fa-solid fa-snowplow fa-3x" aria-hidden="true"></i>
+              <i class="fa-sharp fa-solid fa-scale-balanced fa-3x" aria-hidden="true"></i>
+              <i class="fa-sharp fa-solid fa-plane-arrival fa-3x" aria-hidden="true"></i>
+              <i class="fa-sharp fa-solid fa-money-bill-1-wave fa-3x" aria-hidden="true"></i>
+              <i class="fa-sharp fa-solid fa-life-ring fa-3x" aria-hidden="true"></i>
+              <i class="fa-sharp fa-solid fa-landmark-dome fa-3x" aria-hidden="true"></i>
+              <i class="fa-sharp fa-solid fa-landmark-flag fa-3x" aria-hidden="true"></i>
+              <i class="fa-sharp fa-solid fa-jet-fighter-up fa-3x" aria-hidden="true"></i>
+              <i class="fa-sharp fa-solid fa-jedi fa-3x" aria-hidden="true"></i>
+              <i class="fa-sharp fa-solid fa-igloo fa-3x" aria-hidden="true"></i> */
+
+
+.containerbox
+{
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: #111;
 }
-section {
-    scroll-padding-bottom: 20;
-    padding-top: 2rem;
-    margin: auto;
-    margin-top: 10rem;
+.containerbox .box 
+{
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background: #111;
+  float: left;
+  border: 1px  solid rgba(0,0,0,0.2);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.containerbox .box::before 
+{
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background: #1D1D1D;
+  box-shadow: 0 1px 4px #000;
+  transition: 2s ease-in-out;
+}
+.containerbox .box:hover:before 
+{
+  transition: 0s ease-in-out;
+}
+.containerbox .box:nth-child(9n+1):hover:before 
+{
+  background-color: #f00;
+  box-shadow: 0 0 3px #f00,
+              0 0 10px #f00;
+}
+.containerbox .box:nth-child(9n+2):hover:before 
+{
+  background-color: #0f0;
+  box-shadow: 0 0 3px #0f0,
+              0 0 10px #0f0;
+}
+.containerbox .box:nth-child(9n+3):hover:before 
+{
+  background-color: #00f;
+  box-shadow: 0 0 3px #00f,
+              0 0 10px #00f;
+}
+.containerbox .box:nth-child(9n+4):hover:before 
+{
+  background-color: #00ffad;
+  box-shadow: 0 0 3px #00ffad,
+              0 0 10px #00ffad;
+}
+.containerbox .box:nth-child(9n+5):hover:before 
+{
+  background-color: #ff0;
+  box-shadow: 0 0 3px #ff0,
+              0 0 10px #ff0;
+}
+.containerbox .box:nth-child(9n+6):hover:before 
+{
+  background-color: #0ff;
+  box-shadow: 0 0 3px #0ff,
+              0 0 10px #0ff;
+}
+.containerbox .box:nth-child(9n+7):hover:before 
+{
+  background-color: #f0f;
+  box-shadow: 0 0 3px #f0f,
+              0 0 10px #f0f;
+}
+.containerbox .box:nth-child(9n+8):hover:before 
+{
+  background-color: #e91e63;
+  box-shadow: 0 0 3px #e91e63,
+              0 0 10px #e91e63;
+}
+.containerbox .box:nth-child(9n+9):hover:before 
+{
+  background-color: #f45103;
+  box-shadow: 0 0 3px #f45103,
+              0 0 10px #f45103;
+}
+/* section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   }
+  
+  section .row {
+  position: relative;
+  width: 100%;
+  top: -50%;
+  padding: 15px 0;
+  display: flex;
+  white-space: nowrap;
+  font-size: 64 px;
+  transform: rotate(-30deg);
+  }
+  i{
+    color: #41393d;
+    transition: 1s;
+    padding: 0 5px;
+    user-select: none;
+    cursor: default;
+  }
+  i:hover{
+    transition: 0s;
+    color: #e7368e; 
+    text-shadow: 0 0 120px #e7368e;
+  }
+  section .row div{
+    font-size: 1em;
+    white-space: nowrap;
+    animation: animate1 80s linear infinite;
+    
+  } */
+
+  /* section .row div:nth-child(2){
+    animation: animate2 80s linear infinite;
+    
+  }
+  @keyframes animate1 {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes animate2 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+  section .row:nth-child(even) div{
+    font-size: 1em;
+    white-space: nowrap;
+    animation: animate3 80s linear infinite;
+    
+  }
+
+  section .row:nth-child(even) div:nth-child(2){
+    animation: animate4 80s linear infinite;
+    
+  }
+  @keyframes animate3 {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  @keyframes animate4 {
+    0% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  } */
     .gallery-slider {
     position:relative;
     width: 200px;

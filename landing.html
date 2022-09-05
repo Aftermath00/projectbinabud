@@ -9,10 +9,10 @@
       <!-- aos -->
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <link rel="stylesheet" href="style.css">
+      <script src="https://kit.fontawesome.com/9b189efa70.js" crossorigin="anonymous"></script>
     </head>
 
     <body id="home">
-        <div id="particles-js">
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top"
         style="background-color : #023047">
@@ -37,9 +37,9 @@
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Programs </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#gallery">KL-YES Program</a></li>
-                    <li><a class="dropdown-item" href="#gallery">AFS </a></li>
-                    <li><a class="dropdown-item" href="#gallery">AFS Kakehashi</a></li>
+                    <li><a class="dropdown-item" href="https://afsindonesia.org/programs/yes-program/" target="_blank">KL-YES Program</a></li>
+                    <li><a class="dropdown-item" href="https://afsindonesia.org/study-abroad/find-your-program/" target="_blank">AFS </a></li>
+                    <li><a class="dropdown-item" href="https://afs.org/global-stem/" target="_blank">Global STEM</a></li>
                   </ul>
                   <li class="nav-item">
                     <a class="nav-link" href="index.html#contact">Contact us</a>
@@ -49,13 +49,15 @@
                   </li>
                 </li>
               </ul>
-            </div>
           </div>
-        </nav>
+        </nav> 
+        <!-- navbar end -->
+
+        <div class="containerbox"></div>
         <!-- navbar end -->
 
         <!-- gallery -->
-        <section>
+        <!-- <section>
         <div class="container">
         <div class="slider gallery-slider">
             <span style="--i:1">
@@ -83,42 +85,7 @@
               <img src="img/gallery/8.jpg" alt="Gambar 8"> 
             </span>
           </div>
-        </div>
-
-        
-        </section>
-        <section>
-            <div class="container">
-            <div class="slider gallery-slider">
-                <span style="--i:1">
-                  <img src="img/gallery/1.jpg" alt="Gambar 1"> 
-                </span>
-                <span style="--i:2">
-                  <img src="img/gallery/2.jpg" alt="Gambar 2"> 
-                </span>
-                <span style="--i:3">
-                  <img src="img/gallery/3.jpg" alt="Gambar 3"> 
-                </span>
-                <span style="--i:4">
-                  <img src="img/gallery/4.jpg" alt="Gambar 4"> 
-                </span>
-                <span style="--i:5">
-                  <img src="img/gallery/5.jpg" alt="Gambar 5"> 
-                </span>
-                <span style="--i:6">
-                  <img src="img/gallery/6.jpg" alt="Gambar 6"> 
-                </span>
-                <span style="--i:7">
-                  <img  src="img/gallery/7.jpg" alt="Gambar 7"> 
-                </span>
-                <span style="--i:8">
-                  <img src="img/gallery/8.jpg" alt="Gambar 8"> 
-                </span>
-              </div>
-            </div>
-    
-            
-            </section>
+        </div> -->
           <!-- gallery end -->
         
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
@@ -130,6 +97,12 @@
         </script>
         <script src="js/particles.js"></script>
         <script src="js/app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript">
+            for(var i=1; i<=2500;i++){
+              $('.containerbox').append('<div class="box"></div>')
+            }
+        </script>
     </div>
     </body>
 </html>

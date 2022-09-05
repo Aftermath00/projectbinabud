@@ -12,14 +12,14 @@ particlesJS.load('particles-js', 'particles.json', function() {
 /* Otherwise just put the config content (json): */
 
 particlesJS('particles-js',
-  
+
   {
     "particles": {
       "number": {
-        "value": 120,
+        "value": 150,
         "density": {
           "enable": true,
-          "value_area": 1000
+          "value_area": 800
         }
       },
       "color": {
@@ -44,8 +44,8 @@ particlesJS('particles-js',
         "value": 0.5,
         "random": false,
         "anim": {
-          "enable": false,
-          "speed": 1,
+          "enable": true,
+          "speed": 2,
           "opacity_min": 0.1,
           "sync": false
         }
@@ -67,6 +67,7 @@ particlesJS('particles-js',
         "opacity": 0.4,
         "width": 1
       },
+
       "move": {
         "enable": true,
         "speed": 6,
@@ -81,6 +82,7 @@ particlesJS('particles-js',
         }
       }
     },
+
     "interactivity": {
       "detect_on": "canvas",
       "events": {
@@ -94,22 +96,24 @@ particlesJS('particles-js',
         },
         "resize": true
       },
+
       "modes": {
         "grab": {
-          "distance": 400,
+          "distance": 200,
           "line_linked": {
             "opacity": 1
           }
         },
+
         "bubble": {
-          "distance": 400,
-          "size": 40,
+          "distance": 300,
+          "size": 50,
           "duration": 2,
           "opacity": 8,
           "speed": 3
         },
         "repulse": {
-          "distance": 200
+          "distance": 150
         },
         "push": {
           "particles_nb": 4
@@ -129,5 +133,4 @@ particlesJS('particles-js',
       "background_size": "cover"
     }
   }
-
 );
